@@ -1,0 +1,207 @@
+/*  
+    @CRIADOR: Emanoel Santos
+    Importações principais 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* 
+    Pagina principal
+    Configurações iniciais 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../assets/images/fundo.jpg") no-repeat, #000;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+::-webkit-scrollbar-thumb{
+    display: block;
+    border-radius: 100px;
+    color: red;
+}
+
+/* Barra de navegação */
+.img-nav{
+    box-shadow: -5px -6px 2px 2px #ffffff;
+    border-radius: 100px;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled){
+    padding: 13px 10px;
+    border-radius: 50px;
+    color: #ffff;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled):hover{
+    background: rgb(255, 255, 255);
+    color: #000;
+}
+
+nav.navbar-custom a{
+    margin-left: 40px;
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+}
+
+nav.navbar-custom a:hover{
+    transition: 0.3s;
+    color: #f97474;
+}
+
+section.bg-custom-sect{
+    background: #0000008c; 
+}
+
+.h1-custom{
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #ffff;
+}
+
+div.bg-portfolio-init{
+    background-image: linear-gradient(135deg, #f71919 0%, #bf5d74 100%);
+    border-radius: 20px;
+    border: 5px solid #ffff; 
+    padding: 25px;
+}
+
+.h5-custom{
+    margin: 0px 0px 50px 0px;
+    color: rgb(223, 223, 223);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+footer.bg-footer{
+    background: #0000008c;
+    color: rgb(207, 204, 204);
+    text-align: center;
+    padding: 30px 0 20px 0;
+    font-family: Orbitron, Arial, sans-serif;
+    font-size: 13px;
+}
+
+/* ----- Portfólio ------ */
+section.bg-custom-sect-ptf{
+    background: rgb(250, 250, 250); 
+    padding: 50px 0 50px 0;
+    color: #ffff;
+}
+
+.img{
+    pointer-events: none;
+    user-select: none;
+}
+
+.img.lary{
+    box-shadow: 0 0 8px 8px #e21717; 
+}
+
+.divisor{
+    width: 200px;
+    height: 5px;
+    background: #f71919;
+}
+
+/* ------ Sobre ------ */
+section.bg-sobre{
+    display: flex;
+    margin: 100px 0 100px 0;
+    background: #03030377;
+    color: #ffff;
+    padding: 50px 0 50px 0;
+    justify-content: center;
+    text-align: center;
+}
+
+section.bg-sobre h1{
+    background: #f76363;
+    border-radius: 10px;
+}
+
+section.bg-sobre p{
+    background: #ffff;
+    border-radius: 5px;
+    color: #000;
+}
+
+/* ----- Contato ------- */
+.contato{
+    display: flex;
+    background: #ffffff;
+    padding: 20px 0;
+}
+
+a.btn-ctt{
+    background-color: #ffff;
+    border-radius: 30px;
+    padding: 15px;
+    color: #6d6d6d;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+a.btn-custom-instagram:hover{
+    background: linear-gradient(#fd9d9d, #aa4eb8);
+    box-shadow: 0px 0px 5px 2px #626262;
+    color: #ffff;
+}
+
+a.btn-custom-whatsapp:hover{
+    background: linear-gradient(#49d128,
+    rgb(63, 238, 43), #aaf9ba);
+    animation-duration: 1s;
+    box-shadow: 0px 0px 5px 2px #626262;
+    color: #ffff;
+}
+
+@media (min-width: 200px) {
+    .img-nav{
+        width: 70px;
+    }
+
+    .contato{
+        border-radius: 0px;
+    }
+
+    .contato h1{
+        font-size: 20px;
+    }
+
+    a.btn-ctt{
+        font-size: 12px;
+    }
+
+    .carousel-inner img{
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .contato h1{
+        font-size: 30px;
+    }
+
+    a.btn-ctt{
+        font-size: 15px;
+    }
+
+    .contato{
+        border-radius: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-inner img{
+        width: 50%;
+    }
+}
